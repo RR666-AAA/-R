@@ -1,1 +1,151 @@
-114514
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/Revenant", true))()
+Library.DefaultColor = Color3.fromRGB(255,0,0)--滑动线颜色
+
+Library:Notification({
+	Text = "R脚本作者: R",
+	Duration = 8
+})
+
+Library:Notification({
+	Text = "R脚本持续云更新",
+	Duration = 10
+})
+
+Library:Notification({
+	Text = "R祝你玩的开心",
+	Duration = 12
+})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "R脚本",Text = "欢迎使用",Icon = "rbxassetid://138406365430405",Duration = 3,Callback = bindable,Button1 = "天天开心",Button2 = "天天快乐"})
+
+game:GetService("StarterGui"):SetCore("SendNotification",{Title = "R脚本",Text = "要加什么服务器",Icon = "rbxassetid://138406365430405",Duration = 5,Callback = bindable,Button1 = "脚本信息",Button2 = "加我QQ"})
+
+local msg = Instance.new("Message",workspace)
+msg.Text = "欢迎使用R脚本"
+wait(1.8)
+msg:Destroy()
+
+local msg = Instance.new("Message",workspace)
+msg.Text = "作者名字"
+wait(1.8)
+msg:Destroy()
+
+local msg = Instance.new("Message",workspace)
+msg.Text = "1234562b6"
+wait(1.8)
+msg:Destroy()
+
+local msg = Instance.new("Message",workspace)
+msg.Text = "R脚本群号"
+wait(1.8)
+msg:Destroy()
+
+local msg = Instance.new("消息"，工作区)
+味精。Text = "902972095 "
+等待(1.8)
+消息:销毁()
+
+local msg = Instance.new("消息"，工作区)
+味精。Text = "祝你玩得开心,玩得愉快"
+等待(1.8)
+消息:销毁()
+
+如果getgenv()。ED _ AntiKick然后
+返回
+结束
+
+getgenv()。ED _ AntiKick = {
+Enabled = true，如果您想禁用反踢，请设置为false。
+SendNotifications = true，-如果您希望收到每个事件的通知，请设置为true
+CheckCaller = true -如果您想禁止其他已执行的脚本启动，请设置为true
+}
+本地下拉菜单= {}
+本地playernamedied = " "
+
+对我来说，玩家成对(游戏。Players:GetPlayers()) do
+    dropdown[i] = player.Name
+end
+
+function Notify(top, text, ico, dur)
+  game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = top,
+    Text = text,
+    Icon = ico,
+    Duration = dur,
+  })
+end
+
+local LBLG = Instance.new("ScreenGui", getParent)
+local LBL = Instance.new("TextLabel", getParent)
+local player = game.Players.LocalPlayer
+
+LBLG.Name = "LBLG"
+LBLG.Parent = game.CoreGui
+LBLG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LBLG.Enabled = true
+LBL.Name = "LBL"
+LBL.Parent = LBLG
+LBL。BackgroundColor3 = Color3.new(1，1，1)
+LBL.BackgroundTransparency = 1
+LBL.BorderColor3 = Color3.new(0, 0, 0)
+LBL.Position = UDim2.new(0.75,0,0.010,0)
+LBL.Size = UDim2.new(0, 133, 0, 30)
+LBL.Font = Enum.Font.GothamSemibold
+LBL.Text = "TextLabel"
+LBL.TextColor3 = Color3.new(1, 1, 1)
+LBL.TextScaled = true
+LBL.TextSize = 14
+LBL。TextWrapped = true
+LBL。可见=真
+
+本地FpsLabel = LBL
+本地心跳= game:获取服务(“运行服务”).心跳
+本地最后一次迭代，开始
+本地FrameUpdateTable = { }
+
+本地函数心跳更新()
+LastIteration = tick()
+对于Index = #FrameUpdateTable，1，-1 do
+frame update table[Index+1]=(FrameUpdateTable[Index]> = last iteration-1)和frame update table[Index]或nil
+结束
+frame updatetable[1]= last iteration
+local current fps =(tick()-Start > = 1且#FrameUpdateTable)或(# frame updatetable/(tick()-Start))
+current fps = current fps-current fps % 1
+FpsLabel。Text =("北京时间:"..os.date("%H ").."时"..os.date("%M ").."分"..os.date("%S "))
+结束
+Start = tick()
+心跳:连接(心跳更新)
+
+local fps GUI = instance . new(" screen GUI ")local fps xs = instance . new(" TextLabel ")fps GUI。Name = "FPSGui" FpsGui。ResetOnSpawn = false FpsGui。ZIndexBehavior = Enum。ZIndexBehavior.Sibling FpsXS。Name = "FpsXS" FpsXS。Size = UDim2.new(0，100，0，50)fpsx。Position = UDim2.new(0，10，0，10) FpsXS。BackgroundTransparency = 1 FpsXS。Font = Enum。Font.SourceSansBold FpsXS。Text = "帧率:0英寸FpsXS。TextSize = 20 FpsXS。TextColor3 = Color3.new(1，1，1) FpsXS。Parent = FpsGui函数update fps xs()local fps = math . floor(1/game:get service(“run service”)。RenderStepped:Wait()) FpsXS。Text = "帧率: " ..fps端游:get service(“run service”)。render stepped:Connect(updateFpsXS)fps GUI。家长=游戏。players . local player:WaitForChild(" player GUI ")
+
+local xyn bui = loadstring(game:http get(" https://raw。githubusercontent。com/jy 6812/UI/refs/heads/main/81。Lua "))()
+local win = xynbui:new("R脚本")
+--
+local UITab1 = win:Tab("『信息』",'16060333448')
+
+local about = ui tab 1:section(""R脚本ど",假的)
+
+关于:标签(" R脚本")
+关于:标签("作者QQ:3529399795”)
+关于:标签(" QQ群:902972095")
+关于:标签("作者:R”)
+关于:标签("进群发最新稀有脚本")
+关于:标签("脚本持续更新中")
+关于:标签("脚本正在优化")
+关于:标签("欢迎使用")
+关于:标签("你好"..游戏。Players.LocalPlayer.UserId)
+
+local ui Tab 4 = win:Tab("と加入服务器』",'16060333448')
+
+local about = ui tab 4:section(“”R脚本ど”，真)
+
+关于:按钮("加入极速传奇“，函数()
+本地游戏_id = 3101667897
+local game _ URL = " https://www . roblox . com/games/"..游戏id
+游戏:get service(" TeleportService "):Teleport(game _ id，game。玩家.本地玩家)
+结束)
+
+关于:按钮("加入鲨口生求2英寸，功能()
+本地游戏_id = 8908228901
+local game _ URL = " https://www。roblox。com/games/"..游戏身份证明（identification）
+游戏:GetService("TeleportService "):传送
